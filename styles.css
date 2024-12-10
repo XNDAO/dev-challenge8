@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    background-image: url("./assets/background-image@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.p-thick {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 6px;
+    background-color: #394150;
+    color: #fff;
+    height: 30px;
+    border-radius: 18px;
+}
+
+main {
+    background-color: #fff;
+    width: 1240px;
+    height: 620px;
+    margin: 0 auto;
+    border-radius: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    bottom: 120px;
+}
+
+article {
+    display: flex;
+}
+
+#products {
+    background-color: #E5E7EB;
+    width: 50%;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+#contact-info {
+    background-color: #F3F4F6;
+    width: 50%;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#right-box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+#country-select-container {
+    width: 100%;
+    max-width: 260px;
+}
+
+#country-select {
+    width: 260px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 8px;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+/* Estilo quando o select está no foco */
+#country-select:focus {
+    outline: none;
+    border: none;
+    /* box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); */
+}
+
+/* Estilo para exibir as opções no foco */
+#country-select:focus option {
+    display: block;
+}
+
+/* Estilo das opções ocultas por padrão */
+#country-select option {
+    display: none;
+}
+
+/* A primeira opção deve sempre ser visível */
+#country-select option:first-child {
+    display: block;
+}
+
+.image-container {
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 12px;
+}
+
+img {
+    padding: 10px;
+    height: 75%;
+    margin: auto auto;
+}
+
+input, button {
+    height: 50px;
+}
+
+.img-watch {
+    height: 75%;
+}
+
+.img-screen {
+    height: 75%;
+}
+
+#watch-padding {
+    padding: 25px 0;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.x-qtd {
+    display: flex;
+    justify-content: start;
+}
+
+.x {
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    font-weight: 400;
+}
+
+.box-product {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.box-product-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 12px;
+}
+
+#input-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 35px 35px 35px;
+    height: 180px;
+    position: relative;
+    top: 40px;
+}
+
+#c-info {
+    font-weight: 700;
+}
+
+.input-coupon {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.input-ph {
+    height: 50px;
+    width: 550px;
+    padding: 0 15px 0 15px;
+    border-radius: 8px;
+}
+
+#input-box {
+    height: 50px;
+    width: 400px;
+    padding: 0 15px 0 15px;
+    border-radius: 8px;
+}
+
+#input-button {
+    height: 50px;
+    width: 140px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: #1D1D1F;
+    color: #fff;
+}
+
+.contact-style {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    margin-bottom: 35px;
+}
+
+.postal-code-div {
+    margin-left: 20px;
+}
+
+.postal-code {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    margin-left: 8px;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-box-top {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 70px;
+}
+
+#left-box-top {
+    height: 400px;
+    padding: 35px;
+}
+
+#left-box-top::before {
+    border-bottom: 1px solid #D2D5DA;
+    content: "";
+    position: absolute;
+    left: 35px;
+    top: 415px;
+    height: 1px;
+    width: 550px;
+}
+
+
+#button-continue {
+    position: relative;
+    bottom: 85px;
+    border-radius: 8px;
+    width: 550px;
+    justify-content: center;
+    background-color: #1D1D1F;
+    color: #fff;
+}
+
+#input-box::placeholder, .input-ph::placeholder  {
+    padding: 0 15px 0 15px;
+}
+
+input {
+    outline: none;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1265px) {
+    main {
+        width: 940px;
+    }
+
+    .input-ph, .input-row, .input-coupon, #button-continue {
+        width: 400px;
+    }
+
+    #input-box {
+        width: 260px;
+    }
+
+    #country-select, .postal-code {
+        width: 190px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    main {
+        width: 620px;
+        height: 1130px;
+        flex-direction: column;
+    }
+
+    #contact-info {
+        width: auto;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        border-top-right-radius: 0;
+        height: 510px;
+    }
+
+    #products {
+        width: auto;
+        border-top-left-radius: 24px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 24px;
+        height: 620px;
+    }
+
+    .input-ph, .input-row, .input-coupon, #button-continue {
+        width: 550px;
+    }
+
+    #country-select, .postal-code {
+        width: 190px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #button-continue {
+        position: inherit;
+        width: 550px;
+    }
+
+    #c-info {
+        margin-bottom: 75px;
+    }
+
+    #country-select, .postal-code {
+        width: 260px;
+        margin-bottom: 35px;
+    }
+
+    .postal-code {
+        margin-left: 8px;
+    }
+}
